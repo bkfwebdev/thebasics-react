@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React, { Component } from 'react';
+import AppHeader from "./components/AppHeader";
+import VideoComponent from "./components/JumboImage";
+import ButtonPanel from "./components/GetInTouch";
+import "./styles/code-fu-style.css";
+const myProps = {
+  header:"Front End Dev Basics",
+  videoLinks: {html : "https://www.youtube.com/embed/UB1O30fR-EE",
+              css : "https://www.youtube.com/embed/yfoY53QXEnI",
+              javascript : "https://www.youtube.com/embed/hdI2bqOjy3c"}
+  buttonLabels:["HTML","CSS","JavaScript"]
+}
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <AppHeader/>
+        <VideoComponent/>
+        <ButtonPanel/>
+      </div>
+      
+    );
+  }
 }
 
 export default App;
