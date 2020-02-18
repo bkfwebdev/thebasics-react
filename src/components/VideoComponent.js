@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class VideoComponent extends Component {
-  render() {
+const VideoComponent = (props) => {
+  
     return (
 <div className = "video-box">
-       <iframe title="video-content" src={this.props.currentVideo}>Video Goes Here</iframe>
+       A video goes here apparently
 </div>   
     );
   }
-}
+
 
 export default VideoComponent;

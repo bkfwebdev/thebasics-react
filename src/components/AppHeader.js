@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 
-class AppHeader extends Component {
-  render() {
-    return (
-<div  className="AppHeader">
-       <h1>{this.props.header}</h1>
-</div>   
-    );
-  }
+class AppHeader extends  Component {
+render(){
+  return (
+    <h1>{this.props.header}</h1>
+  )
 }
 
-export default AppHeader;
+}
+
+export default AppHeader
